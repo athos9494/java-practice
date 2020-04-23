@@ -10,6 +10,8 @@
 2.包
 ## 0423
 包路径与权限修饰符</br>
->javac -cp src src/club/banyuan/main/Main.java -d out 
+> javac -cp src src/club/banyuan/main/Main.java -d out 
 </br>
->java -cp out club.banyuan.main.Main
+```
+ java -cp out club.banyuan.main.Main
+```
