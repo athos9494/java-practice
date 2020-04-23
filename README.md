@@ -10,7 +10,14 @@
 2.包
 ## 0423
 包路径与权限修饰符</br>
+在src的上一级目录编译运行
 > javac -cp src src/club/banyuan/main/Main.java -d out 
 </br>
 
 > java -cp out club.banyuan.main.Main
+</br>
+在src目录下编译运行
+> javac club/banyuan/main/Main.java -d ../out
+
+</br>
+
