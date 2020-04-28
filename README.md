@@ -20,4 +20,7 @@
 > javac club/banyuan/main/Main.java -d ../out
 
 </br>
+## 0428
 
+jar打包使用
+类的继承练习
