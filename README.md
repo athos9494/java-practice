@@ -16,10 +16,11 @@
 
 > java -cp out club.banyuan.main.Main
 </br>
-在src目录下编译运行
+在src目录下编译运行</br>
 > javac club/banyuan/main/Main.java -d ../out
 
 </br>
+
 ## 0428
 
 jar打包使用
