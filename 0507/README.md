@@ -177,13 +177,15 @@ interface A
         System.out.println("Interface A");
     }
 }
+//接口中不能有代码块，和构造方法
+//只有static方法，private方法，成员变量，default方法，abstract方法
 ```
 8.以下内容是否编译通过，如果不能请指出错误原因
 ```
 interface ABC
 {
 	public void methodOne();
-	
+	//public abstract修饰关键字自动补全
 	public void methodTwo();
 }
 
@@ -193,6 +195,8 @@ interface PQR extends ABC
 	
 	public void methodTwo();
 }
+//允许接口继承另一个接口，并且声明相同方法签名的方法
+//如果这么写定义一直，返回值类型不能不一致
 ```
 > ???
 9.
@@ -254,20 +258,21 @@ class Y implements X
         char c = this.c;
          
         return ++c;
-    }
+    }//方法结束后变量c被释放了
 }
  
 public class MainClass
 {
     public static void main(String[] args)
     {
-        Y y = new Y();
+        Y y = new Y();//A
          
-        System.out.println(y.methodX());
+        System.out.println(y.methodX());//B
          
-        System.out.println(y.c);
+        System.out.println(y.c);//A
+        
          
-        System.out.println(X.c);
+        System.out.println(X.c);//A
     }
 }
 ```
@@ -653,7 +658,7 @@ public class MainClass
 
 - 接口就是函数申明，类就是函数实现
 2. 接口为什么不能够被实例化
-- 接口类似于一个抽象类，所有的方法都是抽象方法，接口的方法都是默认的public abstra，所以不能被实例化
+- 接口类似于一个抽象类，所有的方法都是抽象方法，接口的方法都是默认的public 、abstract，所以不能被实例化
 3. 接口中是否可以出现成员变量，如果是，成员变量修饰符有什么限制
 4. 接口是否可以继承别的接口，是否可以多继承接口
 5. 接口中的方法修饰符有什么限制
