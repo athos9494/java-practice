@@ -23,8 +23,6 @@ public enum Weekday {
 
     @Override
     public String toString() {
-        return "Weekday{" +
-                "weekday='" + weekday + '\'' +
-                '}';
+        return this.weekday;
     }
 }

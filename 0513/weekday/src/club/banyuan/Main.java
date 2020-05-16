@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         for (Weekday one:Weekday.values()) {
             if(one.isHoliday())
-                System.out.println("周末");
+                System.out.println(one + "是休息日");
             else if(one.isWeekday())
-                System.out.println("工作日");
+                System.out.println(one + "是工作日");
 
         }
 
