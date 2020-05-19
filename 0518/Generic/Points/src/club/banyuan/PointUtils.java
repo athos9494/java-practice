@@ -14,6 +14,16 @@ public class PointUtils {
     public static Point highestPoint(List<Point> points) {
         /* 这等效于实验室中提到的初始化步骤。 */
         Iterator<Point> pointIterator = points.iterator();
+        if (pointIterator.hasNext()) {
+            Point max = pointIterator.next();
+            while(pointIterator.hasNext()){
+                Point temp = pointIterator.next();
+                max = (max.getY()>temp.getY())?max:temp;
+                return max;
+            }
+            return max;
+        }
+
 
         // TODO 使用迭代器完成此方法!
         return null;
