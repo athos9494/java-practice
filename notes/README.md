@@ -567,5 +567,58 @@ Runtimeexception的子类，非受查异常（uncheck exception），可以不�
 
 参数化类型，在不创建新的类型的情况下，通过泛型指定不同的类型来控制形参具体限制的类型，也就是说在泛型的使用过程中，操作的数据类型被指定为一个参数，这个参数类型可以用在类，接口方法中，被叫做泛型类、泛型接口、泛型方法。
 
+通配符
+
+Iterator - hasNext(),next(),remove();/迭代器
+
+- 为什么引入Iterator？
+可以将遍历与实现分离开，目的就是提供一种方法顺序访问（迭代器的种类，可以后往前，也可以跳跃式遍历）一个聚合对象中的各个元素，而不应暴露对象的内部表示
+
+**不仅使用具体类编程，优先使用抽象类和接口编程**
+
+1. 迭代器模式的角色
+- 迭代器角色（Iterator）：负责定义访问遍历元素的接口
+- 具体迭代器角色（Concrete Iterator）：实现迭代器接口，并记录遍历中的当前位置
+- 容器角色（Container）：负责提供创建具体迭代器角色的家口
+- 具体容器角色（Concrete Container）：实现创建具体迭代器角色的家口，这个具体迭代器角色和容器的结构相关。
+
+2. 迭代器接口（Iterator）
+最常用的就是hasNext、next方法，前者判断是否存在下一个元素，后者用于获取该元素
+
+remove方法基本没有被使用的对象实例会被自动的删除（GC）
+3. 具体的迭代器
+next方法是返回当前元素，并指向下一个元素。
+hasNext但会的是boolean，表示当前集合是否存在下一个元素，确认接下来是否可以调用next方法
+
+4. 迭代器的实用
+```
+package club.banyuan;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class Main{
+    public static void main(String[] args) {
+        ArrayList<String> array1 = new ArrayList<String>();
+        array1.add("abc");
+        array1.add("def");
+        array1.add("ghi");
+        array1.add("jkl");
+        System.out.println("array1:"+array1);//array1:[abc, def, ghi, jkl]
+        Iterator<String> iterator = array1.iterator();
+        while(iterator.hasNext()){
+            System.out.print(iterator.next());
+        }//abcdefghijkl
+    }
+}
+```
+
+```
+array1:[abc, def, ghi, jkl]
+abcdefghijkl
+```
+**迭代出来的元素都是原来集合元素的拷贝，java集合中保存的元素实质是对象的引用，而非对象本身**
+
+
 
 
