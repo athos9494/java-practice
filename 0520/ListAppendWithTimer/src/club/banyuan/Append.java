@@ -1,6 +1,7 @@
 package club.banyuan;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * 比较在基于数组的列表和基于链表的列表的末尾增加n个值所需的时间
@@ -27,36 +28,22 @@ public class Append {
 
     public static void main(String args[]) {
         ArrayList arrayList = new ArrayList();
-        Timer timer = new Timer(){//匿名内部类实现Timer接口
-            long currentTime ;
-            long stopTime ;
-
-            @Override
-            public void start() throws IllegalStateException {
-                currentTime = System.currentTimeMillis();
-            }
-
-            @Override
-            public void stop() throws IllegalStateException {
-                stopTime = System.currentTimeMillis();
-            }
-
-            @Override
-            public void reset() {
-
-            }
-
-            @Override
-            public long getTimeMillisecond() {
-                return stopTime - currentTime;
-            }
-        };
+        TimerTest timer = new TimerTest();
         timer.start();
         for (int i = 0;i<n;i++){
             arrayList.add(i);
         }
         timer.stop();
         System.out.println("将"+n+"个值添加到空数组列表的时间是："+timer.getTimeMillisecond()+"ms");
+        LinkedList linkedList = new LinkedList();
+
+        timer.start();
+        for (int i = 0;i< n ;i ++){
+            linkedList.add(i);
+
+        }
+        timer.stop();
+        System.out.println("将"+n+"个值添加到空列表的时间是："+timer.getTimeMillisecond()+"ms");
 
 
     }
