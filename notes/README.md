@@ -565,6 +565,58 @@ Runtimeexception的子类，非受查异常（uncheck exception），可以不�
 
 ### 泛型
 
+#### 为什么使用泛型程序设计
+编写的代码可以被不同的对象所使用
+
+> ArrayList<String> arrayList = new ArrayList<String>();
+
+表示这个数组列表中包含的是String对象
+
+#### 定义简单的泛型类
+
+- 泛型类
+具有一个或者多个泛型变量的类
+```
+public class PairTest {
+    public static void main(String[] args) {
+        String[] word = {"john","had","a","cat"};
+        Pair<String> mm = ArrayAlg.minmax(word);
+        System.out.println(mm.first);
+        System.out.println(mm.second);
+
+
+    }
+}
+class ArrayAlg{
+    public static Pair<String> minmax(String[] a){
+
+        if(a==null||a.length == 0) return null;
+        String min = a[0];
+        String max = a[0];
+        for(int i = 0;i < a.length; i ++){
+            if (min.compareTo(a[i])>0) min = a[i];
+            if (max.compareTo(a[i])<0) max = a[i];
+        }
+
+        return new Pair<>(min,max);
+    }
+}
+class Pair<T>{
+
+    T first;
+    T second;
+    public Pair(T min,T max){
+        this.first = min;
+        this.second = max;
+
+    }
+
+}
+```
+
+
+
+
 参数化类型，
 
 参数化类型，在不创建新的类型的情况下，通过泛型指定不同的类型来控制形参具体限制的类型，也就是说在泛型的使用过程中，操作的数据类型被指定为一个参数，这个参数类型可以用在类，接口方法中，被叫做泛型类、泛型接口、泛型方法。
