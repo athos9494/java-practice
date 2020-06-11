@@ -1,14 +1,59 @@
 ## css
 ### 什么是css
+层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。
+CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。
 ### 样式
+
 #### 背景
+- 背景色：background-color为元素设置背景色
+- 背景图：background-image，默认值为none，如果需要设置自一个背景图，必须设置一个url值
+- 背景重复：需要在页面上对背景图像进行平铺，使用background-repeat
+- 背景定位：position属性，改变图像在背景中的位置
+- 背景关联：文档比较长的时候，背景图像会随着文档的向下滚动而滚动，当文档超过图像的位置的时候，就会消失，可以通过attachment属性防止这种滚动，声明fixed即可
 #### 文本
+css文本属性可以定义文本外观，能够改变文本的颜色，字符间距，对其文本，装饰文本，对文本进行缩进等
+
+- 缩进文本：text-indent，所有元素的第一行可以缩进一个给定的长度
+
+- 水平对齐：text-align，left，right，center是左右居中对齐，justify是两端对齐，文本行的左右两端都在父元素的内边界上，调整单词和字母剑的间隔，各行的长度正好相同
+
+- 字间隔：Word-spacing改变字之间的标准间隔，默认值normal等同于0，字符间隔
+
+- 字母间隔：letter-spacing 单词之间的间隔，
+- 字符转换：texttransform uppercase大写，lowercase小写
+- 文本装饰：text-decoration，underline加下划线，overline加上划线，line-through文本管穿线，blink文本闪烁
+- 处理空白符：white-space
+
 #### 字体
+通用字体系列和特定字体系列
+
+- 字体风格：font- style italic斜体，oblique，文本倾斜显式
+
+- 变形：font- variant设定小型大写字母
+- 加粗：font- weight
+- 字体大小：font-size
 #### 轮廓
+- outline 声明一个设置所有的轮廓属性
+- outline-color设置颜色
+- outline-style样式
+- outline-width宽度
 ### 盒子模型
 #### 边框
+元素边框border是围绕元素内容和内边距的一条或者多条先，允许规定元素边框的样式，宽度和颜色
+
+- 样式：border-style，单边border-top、right、bottom、left-style
+
+- 宽度border-width，单边同上
+
+- 颜色 border-color，单边同上
 #### 内边距
+内边距是在边框和内容之间，控制该区域最简答的属性是padding，控制元素边框和元素内容之间的空白区域
+
+padding-top，right，bottom，left或者直接top加四个数值
 #### 外边距
+围绕在元素边框的空白区域就是外边距，设置外边距会在元素外创建额外的空白，设置外边间距最简单的方法就是使用margin属性
+
+单边外边距属性margin-top，right，bottom，left
 ### 选择器
 #### ID选择器
 D 选择器允许以一种独立于文档元素的方式来指定样式。
