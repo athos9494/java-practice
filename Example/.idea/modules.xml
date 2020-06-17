@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimalMonitor/AnimalMonitor.iml" filepath="$PROJECT_DIR$/AnimalMonitor/AnimalMonitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CaesarCipher/CaesarCipher.iml" filepath="$PROJECT_DIR$/CaesarCipher/CaesarCipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cal/Cal.iml" filepath="$PROJECT_DIR$/Cal/Cal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataSet/DataSet.iml" filepath="$PROJECT_DIR$/DataSet/DataSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Employee/Employee.iml" filepath="$PROJECT_DIR$/Employee/Employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File/File.iml" filepath="$PROJECT_DIR$/File/File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IOStrings/IOStrings.iml" filepath="$PROJECT_DIR$/IOStrings/IOStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListAppendWithTimer/ListAppendWithTimer.iml" filepath="$PROJECT_DIR$/ListAppendWithTimer/ListAppendWithTimer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Method/Method.iml" filepath="$PROJECT_DIR$/Method/Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pairs/Pairs.iml" filepath="$PROJECT_DIR$/Pairs/Pairs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pairs-2/Pairs-2.iml" filepath="$PROJECT_DIR$/Pairs-2/Pairs-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhoneSimulationRefine/PhoneSimulationRefine.iml" filepath="$PROJECT_DIR$/PhoneSimulationRefine/PhoneSimulationRefine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Points/Points.iml" filepath="$PROJECT_DIR$/Points/Points.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RefineCode/RefineCode.iml" filepath="$PROJECT_DIR$/RefineCode/RefineCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE-demo.iml" filepath="$PROJECT_DIR$/SE-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket/Socket.iml" filepath="$PROJECT_DIR$/Socket/Socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmd/cmd.iml" filepath="$PROJECT_DIR$/cmd/cmd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consolidate/consolidate.iml" filepath="$PROJECT_DIR$/consolidate/consolidate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/0528/debug-one/debug-one.iml" filepath="$PROJECT_DIR$/0528/debug-one/debug-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enum/enum.iml" filepath="$PROJECT_DIR$/enum/enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/for customer/for customer.iml" filepath="$PROJECT_DIR$/for customer/for customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambda/lambda.iml" filepath="$PROJECT_DIR$/lambda/lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetCode/leetCode.iml" filepath="$PROJECT_DIR$/leetCode/leetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pair/pair.iml" filepath="$PROJECT_DIR$/pair/pair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/0528/phoneSimulator/phoneSimulator.iml" filepath="$PROJECT_DIR$/0528/phoneSimulator/phoneSimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polymorphism/polymorphism.iml" filepath="$PROJECT_DIR$/polymorphism/polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflect/practice/practice.iml" filepath="$PROJECT_DIR$/reflect/practice/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetCode/q1/q1.iml" filepath="$PROJECT_DIR$/leetCode/q1/q1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetCode/q2/q2.iml" filepath="$PROJECT_DIR$/leetCode/q2/q2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetCode/q3/q3.iml" filepath="$PROJECT_DIR$/leetCode/q3/q3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflect/reflect.iml" filepath="$PROJECT_DIR$/reflect/reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regex/regex.iml" filepath="$PROJECT_DIR$/regex/regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/veding machine/veding machine.iml" filepath="$PROJECT_DIR$/veding machine/veding machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vms/vms.iml" filepath="$PROJECT_DIR$/vms/vms.iml" />
+    </modules>
+  </component>
+</project>

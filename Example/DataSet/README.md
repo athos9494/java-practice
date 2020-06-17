@@ -1,0 +1,3 @@
+将DataSet、Measurer、RectangleMeasurer、StringMeasurer修改为泛型类。不要改动Tester中的代码
+
+使得Tester中的所有的单元测试运行并且测试结果通过。
