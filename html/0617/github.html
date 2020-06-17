@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+            background-color: rgb(238, 235, 235);
+        }
+        .head{
+            padding-left: 0px;
+            background-color:#24292e;
+            height: 53px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .head-item{
+            width: 32px;
+            height: 53px;
+            margin-left: 0px;
+            margin-right: 16px;
+            float: left;
+            
+        }
+        .head-item-a{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            margin-top: 10.5px;
+            background-color: white;
+        }
+        /* .head-div-center{
+            position: absolute;
+            margin-left: 100px;
+            width: 100px;
+            height: 53px;
+            background-color: greenyellow;
+        } */
+        .head-div-sign-button{
+            width: 31.813px;
+            height: 22.266px;
+            background-color: white;
+            float:right;
+            margin-top: 15.367px;
+        }
+        
+        .button-content{
+            display: none;
+            width: 178px;
+            height: 418px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border: 1px solid #d1d5da;
+        }
+        .head-div-sign-button:hover .button-content{
+            display: block;
+        }
+
+        .head-div-ring{
+            width: 16px;
+            height: 53px;
+            margin-left: 16px;
+            margin-right: 16px;
+            float: right;
+        }
+        .head-div-ring-a{
+            width: 16px;
+            height: 21px;
+            background-color: gray;
+            position: absolute;
+            top: 16px;
+        }
+        .head-div-plus{
+            width: 27.813px;
+            height: 53px;
+            margin-right: 16px;
+            float: right;
+        }
+        .head-div-plus-div{
+            width: 27.81px;
+            height: 21px;
+            background-color: gray;
+            position: absolute;
+            top: 16px;
+        }
+        
+        .left{
+            width: 250.75px;
+            height: 100vh;
+            font-size: 14px;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-right: 0px;
+            float: left;
+            border: solid #d1d5da;
+            border-width: 0 1px 0 0 ;
+            background-color: #fff;
+        }
+        .left-sup{
+            width: 250.75px;
+            height: 202px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        .left-sub{
+            width: 250.75px;
+            height: 185px;
+            margin-bottom: 16px;
+            /* background-color: blanchedalmond; */
+        }
+        .left-sup-h2{
+            width: 250.75px;
+            height: 28px;
+            font-size: 14px;
+            margin-bottom: 4px;
+            text-align:left;
+        }
+        .left-sup-h2-a{
+            width: 45.438px;
+            height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border: solid;
+            border-width: 1px;
+            border-color: rgba(27,31,35,.2);
+            color: azure;
+            border-radius: 0.25em;
+            background-position: -1px -1px;
+            background-color: #28a745;
+            float: right;
+            text-decoration: none;
+            text-align: center;
+        }
+        .left-sup-h2-a:hover{
+            border-color: #24292e;
+
+        }
+        
+        .left-sup-div1{
+            width: 250.75px;
+            height: 34px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+        .left-sup-div1-input{
+            width: 232.75px;
+            height: 20px;
+            padding: 6px 8px 6px 8px;
+            border:1px solid #d1d5da;
+            border-radius: 3px;
+            letter-spacing: normal;
+            word-spacing: normal;
+            color: #24292e;
+            font-size: 14px;
+        }
+        .left-sup-ul{
+            width: 250.75px;
+            height: 116px; 
+            list-style-type: disc;
+        }
+        .left-sup-ul-li{
+            width: 250.75px;
+            height:   29px;
+            list-style: none;
+            display: list-item;
+            margin-left: -30px;
+        }
+        .left-sup-ul-li-a{
+            width: 192.422px;
+            height: 21;
+            margin-bottom: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #0366d6;
+        }
+        .left-sup-ul-li-a:hover{
+            text-decoration:underline;
+        }
+        .left-sub-h2{
+            width: 250.75px;
+            height: 21px;
+            padding-top: 16px;
+            margin-bottom: 4px;
+            /* background-color:red; */
+            border-style: solid;
+            border-color: #d1d5da;
+            border-width: 1px 0 0 0;
+            font-size: 14px;
+            /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
+        }
+        .left-sub-p{
+            width: 250.75px;
+            height: 84px;
+            /* background-color: red; */
+            margin-bottom: 10px;
+            margin-top: 0px;
+            /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
+            font-size: 14px;
+            line-height: 1.5;
+            color:#24292e ;
+        }
+        .left-sub-a{
+            font-weight: 600;
+            font-size: 13px;
+            width: 133.797px;
+            height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 1px;
+            border-color:#d1d5da ;
+            text-decoration: none;
+
+            border-radius: 0.5ch;
+            color: #0366d6;
+            position: relative;
+            top: 1px;
+        }
+        .left-sub-a:hover{
+            background-color: #0366d6;
+            color:#fff;
+        }
+        .center{
+            margin-top: 32px;
+            margin-left: 299.75px;
+            margin-right: 299.75px;
+            height: 712px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .center-main{
+            width: 567.5px;
+            height: 538px;
+        }
+        .center-main-div1{
+            width: 501.5px;
+            height: 168px;
+            padding: 32px;
+            border: 1px solid #d1d5da;
+            background-color: #fff;
+            border-radius: 0.25em;
+        }
+        .center-main-div1-h2{
+            width: 501.5px;
+            height: 60px;
+            margin-bottom: 8px;
+            margin-top: 0px;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+        .center-main-div1-p{
+            width: 501.5px;
+            height: 48px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            font-size: 16px;
+            display: block;
+            line-height: 1.5;
+            color: #24292e;
+            margin-bottom: 10px;
+        }
+        .center-main-div1-p-a{
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .center-main-div1-p-a:hover{
+            text-decoration: underline;
+        }
+        
+        .center-main-div1-a{
+            width: 101.609px;
+            height: 20px;
+            padding: 6px 12px 6px 12px;
+            border: 1px solid rgba(27,31,35,.2);
+            border-radius: 0.25em;
+            text-decoration: none;
+            margin-bottom: 0px;
+            position: relative;
+            top: 17px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #0366d6;
+            font-size: 14px;
+        }
+        .center-main-div1-a:hover{
+            background-color: #0366d6;
+            color: #fff;
+        }
+        .center-main-div2{
+            width: 567.5px;
+            height: 52px;
+            margin-top: 24px;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #586069;
+        }
+        .center-main-div2-in{
+            width: 16px;
+            height: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .center-main-div2-strong{
+            width: 41.5px;
+            height: 15px;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #586069;
+        }
+        .center-main-div2-div{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .center-main-div2-div-a{
+            color:#586069;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .center-main-div2-div-a:hover{
+            text-decoration: underline;
+            color: #0366d6;
+        }
+        .center-tail{
+            width: 567.5px;
+            height: 110px;
+            margin-top: 16px;
+            margin-bottom: 32px;        
+        }
+        .center-tail-left{
+            width: 189.156px;
+            height: 110px;
+            margin-right: 32px;
+            float: left;
+        }
+        .center-tail-right{
+            width: 346.344px;
+            height: 110px;
+            display: inline-block;
+        }   
+        .center-tail-right-ul1{
+            width: 91.438px;
+            height: 110px;
+            list-style: none;
+            padding: 0;
+            margin-left: 24px;
+            margin-top: 0;
+            line-height: 1.25;
+            float: left;
+
+        }
+        .center-tail-ul-li{
+            width: 91.438px;
+            height: 18px;
+            margin-bottom: 4px;
+            padding: 0;
+            float: left;
+        }
+        .center-tail-ul-li-a{
+            text-decoration: none;
+            color: #586069;
+            font-size: 12px;
+
+        }
+        .center-tail-ul-li-a:hover{
+            text-decoration: underline;
+            color: #0366d6;
+        }
+
+        /*  */
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head-item">
+            <a href="https://github.com/" class="head-item-a"></a>
+        </div>
+    
+            <!-- head-center -->
+        <div class="head-div-center"></div>
+    
+        <div class="head-div-sign">
+            <button class="head-div-sign-button">
+                <div class="button-content">
+                </div>
+            </button>
+        </div>
+    
+        <div class="head-div-plus">
+            <div class="head-div-plus-div"></div>
+        </div>
+    
+        <div class="head-div-ring">
+            <a href="https://github.com/notifications" class="head-div-ring-a"></a>
+        </div>
+    
+            <!-- <div class="head-div-+">
+                
+            </div> -->
+            <!-- <div class="head-div-ring">
+                <a href="https://github.com/notifications" class="head-div-ring-a"></a>
+            </div> -->
+            
+    </div>
+    
+    
+    <div class = "left">
+            <!-- 左上 -->
+        <div class="left-sup">
+            <h2 class="left-sup-h2">Repositories<a href="https://github.com/new" class="left-sup-h2-a">New</a>
+            </h2>
+            <div class="left-sup-div1" role="search" aria-label="Repositories">
+                <input type="text" class="left-sup-div1-input" aria-label="Find a repository..." placeholder="Find a repository...">
+            </div>
+                <!-- <div class="left-sup-div2"></div> -->
+            <ul class="left-sup-ul">
+                <li class="left-sup-ul-li">
+                    <a href="https://github.com/athos9494/java-practice" class="left-sup-ul-li-a">athos9494/java-practice</a>
+                </li>
+                <li class="left-sup-ul-li">
+                    <a href="https://github.com/athos9494/note-book" class="left-sup-ul-li-a">athos9494/note-book</a>
+                </li>
+                <li class="left-sup-ul-li">
+                    <a href="https://github.com/athos9494/practice-c" class="left-sup-ul-li-a">athos9494/practice-c</a>
+                </li>
+                <li class="left-sup-ul-li">
+                    <a href="https://github.com/athos9494/augenstern" class="left-sup-ul-li-a">augenstern</a>
+                </li>
+            </ul>
+        </div>
+    
+            <!-- 左下 -->
+        <div class="left-sub">
+            <h2 class="left-sub-h2">Working with a team?</h2>
+            <p class="left-sub-p">GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.</p>
+            <a href="https://github.com/account/organizations/new" class="left-sub-a">Create an organization</a>
+        </div>
+    </div>
+
+    <div class="center">
+        <main class="center-main">
+            <div class="center-main-div1">
+                <h2 class="center-main-div1-h2">Discover interesting projects and people to populate your personal news feed.</h2>
+                <p class="center-main-div1-p">Your news feed helps you keep up with recent activity on repositories you 
+                    <a class="center-main-div1-p-a" href="https://github.com/trending">watch</a>
+                     and people you 
+                     <a class="center-main-div1-p-a" href="https://github.com/trending/developers">follow</a>
+                </p>
+                <a href="https://github.com/explore" class="center-main-div1-a">Explore GitHub</a>
+            </div>
+            <div class="center-main-div2">
+                <!-- <div class="center-main-div2-in"></div> -->
+                <strong class="center-main-div2-strong">protip!</strong>
+                The feed shows you events from people you
+                <a href="https://github.com/athos9494/following" class="center-main-div1-p-a">follow</a>
+                and repositories you
+                <a href="https://github.com/watching" class="center-main-div1-p-a">watch</a>
+                <br>
+                <div class="center-main-div2-div">
+                    <a href="https://github.com/athos9494.private.atom?token=AOXLA5E3Y2IT4XBBVCM2USF46XNQI" class="center-main-div2-div-a">Subscribe to your news feed</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- center tail -->
+        <div class="center-tail">
+            <div class="center-tail-left"></div>
+            <div class="center-tail-right">
+                <ul class="center-tail-right-ul1">
+                    <li class="center-tail-ul-li">
+                        <a href="https://github.blog/" class="center-tail-ul-li-a">Blog</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://github.com/about" class="center-tail-ul-li-a">About</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://shop.github.com/" class="center-tail-ul-li-a">Shop</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://github.com/contact/" class="center-tail-ul-li-a">Contact GitHub</a>
+                    </li>
+                </ul>
+                <ul class="center-tail-right-ul1">
+                    <li class="center-tail-ul-li">
+                        <a href="https://developer.github.com/" class="center-tail-ul-li-a">API</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://training.github.com/" class="center-tail-ul-li-a">Training</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://githubstatus.com/" class="center-tail-ul-li-a">Status</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://help.github.com/articles/github-security/" class="center-tail-ul-li-a">Security</a>
+                    </li>
+                </ul>
+                <ul class="center-tail-right-ul1">
+                    <li class="center-tail-ul-li">
+                        <a href="https://github.com/site/terms" class="center-tail-ul-li-a">Terms</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://github.com/site/privacy" class="center-tail-ul-li-a">Privacy</a>
+                    </li>
+                    <li class="center-tail-ul-li">
+                        <a href="https://help.github.com/" class="center-tail-ul-li-a">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="right"></div> -->
+
+    
+</body>
+</html>
