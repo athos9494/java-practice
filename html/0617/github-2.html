@@ -41,10 +41,23 @@
         .header-link-img:hover{
             color: hsla(0,0%,100%,.7);
         }
+        
+        .head-right-ring{
+            height: 53px;
+            width: auto;
+            margin-right: 16px;
+            float: right;
+        }
+        .head-right-ring-a{
+            height: 16px;
+            width: 16px;
+            position: relative;
+            top: 18.5px;
+        }
         .head-center{
             width: 1236.8px;
             height: 53px;
-            margin-right: 16px;
+            margin-right: 200px;
         }
         .head-center-span{
             height: 28px;
@@ -149,7 +162,6 @@
             border-color: #24292e;
 
         }
-        
         .left-sup-div1{
             width: 301px;
             height: 34px;
@@ -238,12 +250,6 @@
         .left-sub-a:hover{
             background-color: #0366d6;
             color:#fff;
-        }
-        .right{
-            height: calc(100vh - 53px);
-            width: 334px;
-            padding-right: 16px;
-            float: right;
         }
         .center{
             height: calc(100vh - 53px);
@@ -396,6 +402,76 @@
             text-decoration: underline;
             color: #0366d6;
         }
+        .right{
+            height: calc(100vh - 75px);
+            width: 334px;
+            padding-right: 16px;
+            margin-top: 32px;
+            float: right;
+            color:#24292e;
+        }
+        .right-h2{
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            margin-top: 0px;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .right-div1{
+            width: 334px;
+            height: 104px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #d1d5da;
+            border-width: 0 0 1px 0;
+        }
+        .right-div1-a{
+            width: auto;
+            height: 18px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #24292e;
+        }
+        .right-div1-a:hover{
+            color: #0366d6;
+        }
+        .right-div1-p{
+            width: 334px;
+            height: 54px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #586069;
+        }
+        .right-div1-point{
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+        }
+        .right-div2{
+            width: 334px;
+            height: 86px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #d1d5da;
+            border-width: 0 0 1px 0;
+        }
+        .right-div3{
+            width: 334px;
+            height: 68px;
+            padding: 8px 0 8px 0;
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -405,17 +481,44 @@
                 <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
         </div>
 
-        <div class="head-right"></div>
+        <div>
+            <!-- 头像 -->
+            <div class="head-right-ring">
+                <img alt="" width="20" height="20" src="https://avatars0.githubusercontent.com/u/61780084?s=60&amp;v=4" style="position: relative;top: 16.5px;height: 20px;width: 20px;">
+            </div>
+            <!-- 更多 -->
+            <div class="head-right-ring">
+                <div style="width: 16pa;height: 16px;position: relative; top: 18.5px;">
+                    <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                        <path fill="#fff" fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z">
+
+                        </path>
+                    </svg>
+
+                </div>
+            </div>
+            <!-- 提醒 -->
+            <div class="head-right-ring">
+                <a class="head-right-ring-a" href="https://github.com/notifications">
+                    <svg style="color:#fff; overflow:hidden; " class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                        <path fill="#fff" d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z">
+
+                    </path>
+                </svg>
+                </a>
+            </div>
+        </div>
 
         <div class="head-center">
             <span class="head-center-span">
                 <input type="text" placeholder="Search or jump to..." class="head-center-span-input" id="img1">
             </span>
             <nav class="head-center-nav">
-                <a href="" style="width: 87.813px;" class="head-center-nav-a">Pull requests</a>
-                <a href="" style="width: 43.141px;" class="head-center-nav-a">Issues</a>
-                <a href="" style="width: 83.5px;" class="head-center-nav-a">Marketplace</a>
-                <a href="" style="width: 50.547px;" class="head-center-nav-a">Explore</a>
+                <a href="" style="width: auto;" class="head-center-nav-a">Pull requests</a>
+                <a href="" style="width: auto;" class="head-center-nav-a">Issues</a>
+                <a href="" style="width: auto;" class="head-center-nav-a">Marketplace</a>
+                <a href="" style="width: auto;" class="head-center-nav-a">Explore</a>
             </nav>
         </div>
     </div>
@@ -456,7 +559,62 @@
         </div>
 
 
-        <div class="right"></div>
+        <div class="right">
+            <h2 class="right-h2">Explore repositories
+            </h2>
+            <div class="right-div1">
+                <a href="https://github.com/nuxt/content" class="right-div1-a">nuxt/content</a>
+                <p class="right-div1-p">
+                    Write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS
+                </p>
+                <span style="width: auto;height: auto;">
+                    <span class = "right-div1-point" style="background-color: #f1e05a;"></span>
+                    <span style="font-size: 12px;margin-right: 8px;">JavaScript</span>
+                </span>
+                <span style="width: auto;height: auto;font-size: 12px;color: #586069;">
+                    <svg style="font-size:12px; font-weight:400; color:#586069" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+
+                        </path>
+                    </svg>
+                    643
+                </span>
+            </div>
+            <div class="right-div2">
+                <a href="https://github.com/ohbm/hackathon2020" class="right-div1-a">ohbm/hackathon2020</a>
+                <p class="right-div1-p" style="height: 36px;">Website for the 2020 OHBM Hackathon (Location: 3rd planet from the Sun)</p>
+                <span style="width: auto;height: auto;">
+                    <span class = "right-div1-point" style="background-color: #e34c26;"></span>
+                    <span style="font-size: 12px;margin-right: 8px;">HTML</span>
+                </span>
+                <span style="width: auto;height: auto;font-size: 12px;color: #586069;">
+                    <svg style="font-size:12px; font-weight:400; color:#586069" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+
+                        </path>
+                    </svg>
+                    43
+                </span>
+            </div>
+
+            <div class="right-div3">
+                <a href="https://github.com/Automattic/wp-calypso" class="right-div1-a">Automattic/wp-calypso</a>
+                <p class="right-div1-p" style="height: auto;">The JavaScript and API powered WordPress.com</p>
+                <span style="width: auto;height: auto;">
+                    <span class = "right-div1-point" style="background-color: #f1e05a;"></span>
+                    <span style="font-size: 12px;margin-right: 8px;">JavaScript</span>
+                </span>
+                <span style="width: auto;height: auto;font-size: 12px;color: #586069;">
+                    <svg style="font-size:12px; font-weight:400; color:#586069" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+
+                        </path>
+                    </svg>
+                    11.5k
+                </span>
+            </div>
+            <a href="https://github.com/explore" class="right-div1-a" style="color: #586069;font-weight: 400;">Explore more →</a>
+        </div>
 
 
         <div class="center">
