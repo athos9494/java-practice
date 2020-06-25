@@ -1,3 +1,5 @@
+package DealCards.src.club.banyuan;
+
 class Player{
 	private String role;//角色，两种角色
 //发牌
