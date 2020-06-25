@@ -1,9 +1,13 @@
 package club.banyuan;
 
-public class GenericDemo<K,V> {
+/**
+ * @author 10260
+ */
+public class GenericDemo<K, V> {
     private K key;
     private V value;
-    public void setKey(K key){
+
+    public void setKey(K key) {
         this.key = key;
     }
 
@@ -19,12 +23,18 @@ public class GenericDemo<K,V> {
         this.value = value;
     }
 }
-class Test{
+
+class Test {
     public static void main(String[] args) {
-        GenericDemo<String,Integer> genericDemo = new GenericDemo();
+        GenericDemo<String, Integer> genericDemo = new GenericDemo();
         genericDemo.setKey("carl");
         genericDemo.setValue(23);
-        System.out.println("name:"+genericDemo.getKey()+"-age:"+genericDemo.getValue());
+        System.out.println("name:" + genericDemo.getKey() + "-age:" + genericDemo.getValue());
+
+        GenericDemo<Integer, String> genericDemo1 = new GenericDemo<>();
+        genericDemo1.setKey(33);
+        genericDemo1.setValue("john");
+        System.out.println("name:" + genericDemo1.getValue() + "-age:" + genericDemo1.getKey());
     }
 }
 
