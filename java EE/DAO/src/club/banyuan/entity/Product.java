@@ -6,15 +6,13 @@ public class Product {
     String description = null;
     Double price = null;
     Integer stock = null;
-    Integer quantity = null;
 
-    public Product(Integer id, String name, String description, Double price, Integer stock, Integer quantity) {
+    public Product(Integer id, String name, String description, Double price, Integer stock) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.stock = stock;
-        this.quantity = quantity;
     }
 
     public Integer getId() {
@@ -55,13 +53,5 @@ public class Product {
 
     public void setStock(Integer stock) {
         this.stock = stock;
-    }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
     }
 }

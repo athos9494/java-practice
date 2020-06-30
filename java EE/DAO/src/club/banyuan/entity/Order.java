@@ -5,8 +5,26 @@ import java.util.Date;
 public class Order {
     private Integer id;
     private Integer userId;
+    private String loginName;
     private Date createTime;
     private double cost;
+
+    public Order(Integer id, Integer userId, String loginName, Date createTime, double cost) {
+        this.id = id;
+        this.userId = userId;
+        this.loginName = loginName;
+        this.createTime = createTime;
+        this.cost = cost;
+    }
+
+    public String getLoginName() {
+        return loginName;
+    }
+
+    public void setLoginName(String loginName) {
+        this.loginName = loginName;
+    }
+
 
     public Integer getId() {
         return id;

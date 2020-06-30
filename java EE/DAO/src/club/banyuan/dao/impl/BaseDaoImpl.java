@@ -13,6 +13,7 @@ public abstract class BaseDaoImpl implements IBaseDao {
         this.connection = connection;
     }
 
+    @Override
     public ResultSet executeQuery(String sql, Object[] params) {
         ResultSet rs = null;
         try {
@@ -29,6 +30,8 @@ public abstract class BaseDaoImpl implements IBaseDao {
     }
 
     //增删改操作
+    @Override
+
     public int executeUpdate(String sql, Object[] params) {
         int updateRows = 0;
         try {
@@ -45,6 +48,7 @@ public abstract class BaseDaoImpl implements IBaseDao {
         return updateRows;
     }
 
+    @Override
     public int executeInsert(String sql, Object[] params) {
         Long id = 0L;
         try {
@@ -69,6 +73,8 @@ public abstract class BaseDaoImpl implements IBaseDao {
 
 
     //释放资源
+    @Override
+
     public boolean closeResource() {
         if (pstm != null) {
             try {
@@ -81,6 +87,7 @@ public abstract class BaseDaoImpl implements IBaseDao {
         return true;
     }
 
+    @Override
     public boolean closeResource(ResultSet reSet) {
         if (reSet != null) {
             try {
@@ -95,6 +102,8 @@ public abstract class BaseDaoImpl implements IBaseDao {
     }
 
     // 需要重写的方法，将结果集转换为对象
+
+    @Override
     public abstract Object tableToClass(ResultSet rs) throws Exception;
 
 }
