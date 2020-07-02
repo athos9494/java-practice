@@ -6,15 +6,23 @@ public class Product {
     String description = null;
     Double price = null;
     Integer stock = null;
+<<<<<<< HEAD
     Integer quantity = null;
 
     public Product(Integer id, String name, String description, Double price, Integer stock, Integer quantity) {
+=======
+
+    public Product(Integer id, String name, String description, Double price, Integer stock) {
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.stock = stock;
+<<<<<<< HEAD
         this.quantity = quantity;
+=======
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     }
 
     public Integer getId() {
@@ -56,6 +64,7 @@ public class Product {
     public void setStock(Integer stock) {
         this.stock = stock;
     }
+<<<<<<< HEAD
 
     public Integer getQuantity() {
         return quantity;
@@ -64,4 +73,6 @@ public class Product {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+=======
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
 }

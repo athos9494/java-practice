@@ -36,6 +36,7 @@ public class TestMain {
 
         Connection conn = JdbcUtils.getConnection();
         UserDao userDao = new UserDaoImpl(conn);
+<<<<<<< HEAD
 //        User newUser = new User(null,"kkks","realName","123",1,"dfs@sdf.com","12345666673");
 //        int id = userDao.add(newUser);
 //        System.out.println(id);
@@ -46,6 +47,18 @@ public class TestMain {
         ProductDao productDao = new ProductDaoImpl(conn);
         System.out.println(productDao.getProductById(1));
         System.out.println(productDao.getProductByName("华为"));
+=======
+//        User newUser = new User(null,"kkk","realName","123",1,"dfs@sdf.com","12345666673");
+//        int id = userDao.add(newUser);
+//        System.out.println(id);
+
+//        User user = userDao.getLoginUser("kkk","123");
+//        System.out.println(user);
+
+        ProductDao productDao = new ProductDaoImpl(conn);
+        System.out.println(productDao.getProductById(733).getName());
+        System.out.println(productDao.getProductByName("香水"));
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
 
     }
 }

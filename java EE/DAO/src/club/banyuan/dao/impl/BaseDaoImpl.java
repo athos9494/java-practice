@@ -13,6 +13,10 @@ public abstract class BaseDaoImpl implements IBaseDao {
         this.connection = connection;
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public ResultSet executeQuery(String sql, Object[] params) {
         ResultSet rs = null;
         try {
@@ -29,6 +33,11 @@ public abstract class BaseDaoImpl implements IBaseDao {
     }
 
     //增删改操作
+<<<<<<< HEAD
+=======
+    @Override
+
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public int executeUpdate(String sql, Object[] params) {
         int updateRows = 0;
         try {
@@ -45,6 +54,10 @@ public abstract class BaseDaoImpl implements IBaseDao {
         return updateRows;
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public int executeInsert(String sql, Object[] params) {
         Long id = 0L;
         try {
@@ -69,6 +82,11 @@ public abstract class BaseDaoImpl implements IBaseDao {
 
 
     //释放资源
+<<<<<<< HEAD
+=======
+    @Override
+
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public boolean closeResource() {
         if (pstm != null) {
             try {
@@ -81,6 +99,10 @@ public abstract class BaseDaoImpl implements IBaseDao {
         return true;
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public boolean closeResource(ResultSet reSet) {
         if (reSet != null) {
             try {
@@ -95,6 +117,11 @@ public abstract class BaseDaoImpl implements IBaseDao {
     }
 
     // 需要重写的方法，将结果集转换为对象
+<<<<<<< HEAD
+=======
+
+    @Override
+>>>>>>> e8277cc3d614bdb14d97acb5b6a1a4eecd676677
     public abstract Object tableToClass(ResultSet rs) throws Exception;
 
 }
