@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.Properties;
 
 public class JdbcUtils {
+
     //    设置jdbc连接数据库的url，登录数据库的用户名和密码
     private static String url;
     private static String user;
