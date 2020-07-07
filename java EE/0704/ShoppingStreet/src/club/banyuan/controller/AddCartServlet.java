@@ -16,6 +16,7 @@ import java.util.Map;
 
 @WebServlet(name = "AddCartServlet",urlPatterns = "/addCart.do")
 public class AddCartServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.valueOf(request.getParameter("productId"));
         int num = Integer.valueOf(request.getParameter("num"));
@@ -35,6 +36,7 @@ public class AddCartServlet extends HttpServlet {
         request.getRequestDispatcher("buycar.jsp").forward(request,response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
     }

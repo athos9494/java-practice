@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1dc2339b-e8e2-4434-84e1-f2051d919657" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../0506/cake/cake.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0506/多态练习/多态练习.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0507/0507.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0508/0508.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0511/0511.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0512/0512.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0513/0513.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0515/0515.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0518/Generic/DataSet/DataSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0518/Generic/Pairs/Pairs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0518/Generic/Points/Points.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0519/0519.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0520/ListAppendWithTimer/ListAppendWithTimer1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0521/0521.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0526/cmd/cmd1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0526/sumup/sumup.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0527/0527.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0528/debug-one/debug-one1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0529/PhoneSimulationRefine/PhoneSimulationRefine1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0602/0602.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0606/0606.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0609/reflect/practice/practice1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/0528/phoneSimulator/phoneSimulator1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/DataSet/DataSet1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/Method/Method1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/Pairs/Pairs1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/Points/Points1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/RefineCode/RefineCode1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/for customer/for customer1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example/reflect/reflect1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/artifacts/ShoppingStreet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/runConfigurations/Tomcat_9_0_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0518/Generic/Method/Method.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0518/Generic/Method/Method.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0520/for customer/for customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0520/for customer/for customer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0528/phoneSimulator/phoneSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0528/phoneSimulator/phoneSimulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0529/RefineCode/RefineCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0529/RefineCode/RefineCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0609/reflect/reflect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0609/reflect/reflect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/0528/debug-one/debug-one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/0528/debug-one/debug-one.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/AnimalMonitor/AnimalMonitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/AnimalMonitor/AnimalMonitor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/CaesarCipher/CaesarCipher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/CaesarCipher/CaesarCipher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Cal/Cal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Cal/Cal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Demo/Demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Demo/Demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Employee/Employee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Employee/Employee.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/File/File.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/File/File.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/IOStrings/IOStrings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/IOStrings/IOStrings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/ListAppendWithTimer/ListAppendWithTimer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/ListAppendWithTimer/ListAppendWithTimer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Pairs-2/Pairs-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Pairs-2/Pairs-2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/PhoneSimulationRefine/PhoneSimulationRefine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/PhoneSimulationRefine/PhoneSimulationRefine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Socket/Socket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Socket/Socket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/Thread/Thread.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/Thread/Thread.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/calculator/calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/calculator/calculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/cmd/cmd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/cmd/cmd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/consolidate/consolidate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/consolidate/consolidate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/enum/enum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/enum/enum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/example/example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/example/example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/generic/generic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/generic/generic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/lambda/lambda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/lambda/lambda.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/leetCode/leetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/leetCode/leetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/leetCode/q1/q1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/leetCode/q1/q1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/leetCode/q2/q2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/leetCode/q2/q2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/pair/pair.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/pair/pair.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/polymorphism/polymorphism.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/polymorphism/polymorphism.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/reflect/practice/practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/reflect/practice/practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/veding machine/veding machine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/veding machine/veding machine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/vms/vms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/vms/vms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/artifacts/MVCWeb_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/libraries/mysql_connector_java_8_0_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/MVCWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/ShoppingStreet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/AddCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/AddCartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/AddadressServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/AddadressServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/OrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/ProductDetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/ProductDetailServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/SearchServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/out/artifacts/MVCWeb_war_exploded/WEB-INF/classes/club/banyuan/controller/SearchServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/AddCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/AddCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/AddadressServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/AddadressServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/OrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/ProductDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/ProductDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/0704/ShoppingStreet/src/club/banyuan/controller/SearchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/DAO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/src/club/banyuan/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/club/banyuan/utils/JdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCWeb/MVCWeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java EE.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eJoHTwDTHgczh8ylLsKpsVpZqC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/0704/ShoppingStreet" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1dc2339b-e8e2-4434-84e1-f2051d919657" name="Default Changelist" comment="" />
+      <created>1594048969214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594048969214</updated>
+      <workItem from="1594048973862" duration="66000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1594049038940">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594049038940" />
+  </component>
+</project>

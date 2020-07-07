@@ -17,6 +17,7 @@ import java.util.List;
 
 @WebServlet(name = "AddressServlet", urlPatterns = "/address.do")
 public class AddadressServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String address = request.getParameter("country") + request.getParameter("province") +
@@ -54,6 +55,7 @@ public class AddadressServlet extends HttpServlet {
         request.getRequestDispatcher("Member_Address.jsp").forward(request, response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }

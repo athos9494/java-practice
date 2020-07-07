@@ -20,10 +20,11 @@ import java.util.*;
 
 @WebServlet(name = "OrderServlet", urlPatterns = "/order.do")
 public class OrderServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Double sumcost = Double.valueOf(request.getParameter("sumcost"));
         HttpSession session = request.getSession();
-        User user = (User)session.getAttribute("user");
+        User user = (User) session.getAttribute("user");
 
 
         Order order = new Order();
@@ -35,28 +36,28 @@ public class OrderServlet extends HttpServlet {
         order.setCreateTime(date);
 
         //按照时间随机生成订单号
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddHHmmss");
-        String newDate=sdf.format(new Date());
-        String result="";
-        Random random=new Random();
-        for(int i=0;i<3;i++){
-            result+=random.nextInt(10);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        String newDate = sdf.format(new Date());
+        String result = "";
+        Random random = new Random();
+        for (int i = 0; i < 3; i++) {
+            result += random.nextInt(10);
         }
 
-        order.setSerialNumber(newDate+result);
+        order.setSerialNumber(newDate + result);
 
 
         OrderService orderService = new OrderServiceImpl();
         try {
 
             int orderId = orderService.addOrder(order);
-            Map<Product,Integer> cart = (Map<Product, Integer>) session.getAttribute("cart");
+            Map<Product, Integer> cart = (Map<Product, Integer>) session.getAttribute("cart");
             for (Product product : cart.keySet()) {
                 OrderDetail orderDetail = new OrderDetail();
                 orderDetail.setOrderId(orderId);
                 orderDetail.setProductId(product.getId());
                 orderDetail.setQuantity(cart.get(product));
-                orderDetail.setCost((Double) (cart.get(product)*product.getPrice()));
+                orderDetail.setCost((Double) (cart.get(product) * product.getPrice()));
                 orderService.addOrderDetail(orderDetail);
             }
 
@@ -74,6 +75,7 @@ public class OrderServlet extends HttpServlet {
         }
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
