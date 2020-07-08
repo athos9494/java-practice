@@ -4,6 +4,14 @@ public class Administrator {
     String adminName;
     String adminPwd;
 
+    public Administrator() {
+    }
+
+    public Administrator(String adminName, String adminPwd) {
+        this.adminName = adminName;
+        this.adminPwd = adminPwd;
+    }
+
     public String getAdminName() {
         return adminName;
     }
