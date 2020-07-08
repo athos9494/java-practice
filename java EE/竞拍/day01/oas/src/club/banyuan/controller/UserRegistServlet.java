@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "RegistServlet",urlPatterns = "/regist.do")
-public class RegistServlet extends HttpServlet {
+@WebServlet(name = "UserRegistServlet",urlPatterns = "/regist.do")
+public class UserRegistServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User();
@@ -31,10 +31,10 @@ public class RegistServlet extends HttpServlet {
             throwables.printStackTrace();
         }
         if (flag){
-            resp.sendRedirect("竞拍者登录.html");
+            resp.sendRedirect("index.jsp");
         }
         else {
-            resp.sendRedirect("竞拍者注册页.html");
+            resp.sendRedirect("regist.jsp");
         }
 
     }
