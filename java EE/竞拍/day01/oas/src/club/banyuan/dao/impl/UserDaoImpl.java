@@ -13,9 +13,9 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
 
     @Override
     public int add(User user) {
-        String sql = "insert into user(id,userName,userPwd,idNum,mobile,address,postCode) values(null,?,?,?,?,?,?)";
+        String sql = "insert into user(userName,userPwd,idNum,mobile,address,postCode) values（?,?,?,?,?,?)";
         Object[] params = new Object[]{user.getUserName()
-                ,user.getUserName(),user.getUserPwd(),user.getIdNum(),user.getMobile(),user.getAddress(),user.getPostCode()};
+                ,user.getUserPwd(),user.getIdNum(),user.getMobile(),user.getAddress(),user.getPostCode()};
         int i= executeInsert(sql,params);
         return i;
     }
@@ -45,7 +45,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
         User user = new User(rs.getInt(1),
                 rs.getString(2),
                 rs.getString(3),
-                rs.getInt(4),rs.getString(5),
+                rs.getString(4),rs.getString(5),
                 rs.getString(6),rs.getString(7));
 
         return user;

@@ -4,14 +4,14 @@ public class User {
     Integer id;
     String userName;
     String userPwd;
-    Integer idNum;
+    String idNum;
     String mobile;
     String address;
     String postCode;
 
     public User(){}
 
-    public User(Integer id,String userName,String userPwd,Integer idNum,String mobile,String address,String postCode){
+    public User(Integer id,String userName,String userPwd,String idNum,String mobile,String address,String postCode){
         this.id = id;
         this.userName = userName;
         this.userPwd = userPwd;
@@ -45,11 +45,11 @@ public class User {
         this.userPwd = userPwd;
     }
 
-    public Integer getIdNum() {
+    public String getIdNum() {
         return idNum;
     }
 
-    public void setIdNum(Integer idNum) {
+    public void setIdNum(String idNum) {
         this.idNum = idNum;
     }
 
