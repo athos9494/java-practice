@@ -1,15 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: edz
-  Date: 2020/7/8
-  Time: 11:00
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page import="club.banyuan.entity.Lots" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ page import="club.banyuan.entity.User" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="club.banyuan.entity.Administrator" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -29,21 +23,21 @@
     <div class="logout right"><a href="#" title="注销">注销</a></div>
     <div class="logout right"><a href="auctionResult.do">看竞拍结果</a></div>
   </div>
-  <form action="search.do">
-    <div class="forms">
-      <label for="name">名称</label>
-      <input name="name" type="text" class="nwinput" id="name"/>
-      <label for="names">描述</label>
-      <input name="describtion" type="text" id="names" class="nwinput"/>
-      <label for="time">开始时间</label>
-      <input name="startTime" type="text" id="time" class="nwinput"/>
-      <label for="end-time">结束时间</label>
-      <input name="finishTime" type="text" id="end-time" class="nwinput" />
-      <label for="price">起拍价</label>
-      <input name="startPrice" type="text" id="price" class="nwinput" />
-      <input name="" type="submit"  value="查询" class="spbg buttombg f14  sale-buttom"/>
-    </div>
-  </form>
+   <form action="search.do">
+     <div class="forms">
+       <label for="name">名称</label>
+       <input name="name" type="text" class="nwinput" id="name"/>
+       <label for="names">描述</label>
+       <input name="description" type="text" id="names" class="nwinput"/>
+       <label for="time">开始时间</label>
+       <input name="startTime" type="text" id="time" class="nwinput"/>
+       <label for="end-time">结束时间</label>
+       <input name="finishTime" type="text" id="end-time" class="nwinput" />
+       <label for="price">起拍价</label>
+       <input name="startPrice" type="text" id="price" class="nwinput" />
+       <input name="" type="submit"  value="查询" class="spbg buttombg f14  sale-buttom"/>
+     </div>
+   </form>
 
   <div class="items">
     <ul class="rows even strong">
@@ -56,9 +50,11 @@
     </ul>
     <%
       List<Lots> lotsList = (ArrayList<Lots>)session.getAttribute("lotsListNotSelled");
+      Administrator admin = (Administrator) session.getAttribute("admin");
       User user = (User) session.getAttribute("user");
-      if(user != null){
-        for (Lots lots : lotsList) {
+      if(user != null || admin != null){
+      for (Lots lots : lotsList) {
+
     %>
     <ul class="rows">
       <li><a href="#" title=""><%=lots.getName()%></a></li>
@@ -69,10 +65,8 @@
       <li class="borderno red"><a href="auction.do?id=<%=lots.getId()%>">竞拍</a></li>
     </ul>
     <%
-        }
+      }
       }else{
-//        out.print("<a href=\"login.do\"><input type=\"button\" value=\"用户登录\"/></a>");
-//        out.print("<a href=\"adminLogin.do\"><input type=\"button\" value=\"管理员登陆\"/></a>");
         out.println("<h1><a href=\"login.do\">用户登陆</a></h1>");
         out.print("<h1><a href=\"adminLogin.do\">管理员登陆</a></h1>");
       }
@@ -94,3 +88,4 @@
 </div>
 </body>
 </html>
+

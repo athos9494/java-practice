@@ -1,7 +1,5 @@
 package club.banyuan.controller;
 
-import club.banyuan.dao.AdministratorDao;
-import club.banyuan.dao.impl.AdministratorDaoImpl;
 import club.banyuan.entity.Administrator;
 import club.banyuan.service.AdministratorService;
 import club.banyuan.service.impl.AdministratorServiceImpl;

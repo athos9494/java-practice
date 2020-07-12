@@ -12,6 +12,6 @@ public class AdministratorServiceImpl implements AdministratorService {
     @Override
     public Administrator login(String adminName, String adminPwd) throws SQLException {
         AdministratorDao administratorDao = new AdministratorDaoImpl(JdbcUtils.getConnection());
-        return administratorDao.getLoginAdmin(adminName,adminPwd);
+        return administratorDao.getLoginAdministrator(adminName,adminPwd);
     }
 }

@@ -13,7 +13,7 @@ public class AdministratorDaoImpl extends BaseDaoImpl implements AdministratorDa
     }
 
     @Override
-    public Administrator getLoginAdmin(String adminName, String adminPwd) throws SQLException {
+    public Administrator getLoginAdministrator(String adminName, String adminPwd) throws SQLException {
         String sql = "select* from administrator where adminName = ? and adminPwd = ?";
         Object[] objects = new Object[]{adminName,adminPwd};
         ResultSet resultSet = executeQuery(sql,objects);

@@ -47,8 +47,8 @@ public class Lots {
         return description;
     }
 
-    public void setDescription(String describtion) {
-        this.description = describtion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Date getStartTime() {

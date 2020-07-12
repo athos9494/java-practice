@@ -63,12 +63,7 @@
 
         </form>
     </div>
-    <!-- main end-->
-    <!-- footer begin-->
-
 </div>
-<!--footer end-->
-
 </div>
 </body>
 </html>

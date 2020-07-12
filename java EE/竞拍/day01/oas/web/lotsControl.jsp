@@ -33,7 +33,7 @@
             <label for="name">名称</label>
             <input name="name" type="text" class="nwinput" id="name"/>
             <label for="names">描述</label>
-            <input name="describtion" type="text" id="names" class="nwinput"/>
+            <input name="description" type="text" id="names" class="nwinput"/>
             <label for="time">开始时间</label>
             <input name="startTime" type="text" id="time" class="nwinput"/>
             <label for="end-time">结束时间</label>
@@ -55,7 +55,7 @@
             <li class="borderno">操作</li>
         </ul>
         <%
-            List<Lots> lotsList = (ArrayList<Lots>)session.getAttribute("productListNotSelled");
+            List<Lots> lotsList = (ArrayList<Lots>)session.getAttribute("LotsListNotSelled");
             for (Lots lots : lotsList) {
         %>
         <ul class="rows">
@@ -65,8 +65,8 @@
             <li><%=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ").format(lots.getFinishTime())%></li>
             <li><%=lots.getStartPrice()%></li>
             <li class="borderno red">
-                <a href="?id=<%=lots.getId()%>" title="竞拍" onclick="dele();">修改</a>|
-                <a href="?id=<%=lots.getId()%>" title="竞拍" onclick="abc();">删除</a>
+                <a href="alter.do?id=<%=lots.getId()%>" title="竞拍" onclick="dele();">修改</a>|
+                <a href="delete.do?id=<%=lots.getId()%>" title="竞拍" onclick="abc();">删除</a>
             </li>
         </ul>
         <%

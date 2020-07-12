@@ -12,19 +12,19 @@ public class Administrator {
         this.adminPwd = adminPwd;
     }
 
-    public String getAdminName() {
+    public String getAdministratorName() {
         return adminName;
     }
 
-    public void setAdminName(String adminName) {
+    public void setAdministratorName(String adminName) {
         this.adminName = adminName;
     }
 
-    public String getAdminPwd() {
+    public String getAdministratorPwd() {
         return adminPwd;
     }
 
-    public void setAdminPwd(String adminPwd) {
+    public void setAdministratorPwd(String adminPwd) {
         this.adminPwd = adminPwd;
     }
 }
