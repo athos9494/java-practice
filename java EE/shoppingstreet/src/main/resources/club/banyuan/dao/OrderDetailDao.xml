@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="club.banyuan.dao.OrderDetailDao">
+    <select id="getOrderDetailByOrderId" parameterType="Order" resultMap="Order_detailMap">
+     select * from order_detail where orderId = #{id};
+  </select>
+
+
+    <insert id="saveOrderDetail" parameterType="OrderDetail">
+        <selectKey keyColumn="id" keyProperty="id" resultType="int">
+            select last_insert_id();
+        </selectKey>
+        insert into order_detail values (null,#{orderId},#{productId},#{quantity},#{cost})
+    </insert>
+
+
+    <resultMap id="Order_detailMap" type="OrderDetail">
+        <id column="id" property="id"/>
+        <result column="orderId" property="orderId"/>
+        <result column="productId" property="productId"/>
+        <result column="quantity" property="quantity"/>
+        <result column="cost" property="cost"/>
+
+    </resultMap>
+</mapper>
