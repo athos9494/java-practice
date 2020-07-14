@@ -30,9 +30,9 @@
 
     <!-- MyBatis Mapper文件的位置 -->
     <mappers>
-<!--        <mapper resource="club/banyuan/dao/AdministratorDao.xml"/>-->
-<!--        <mapper resource="club/banyuan/dao/AuctionDao.xml"/>-->
-<!--        <mapper resource="club/banyuan/dao/LotsDao.xml"/>-->
+        <mapper resource="club/banyuan/dao/AdministratorDao.xml"/>
+        <mapper resource="club/banyuan/dao/AuctionDao.xml"/>
+        <mapper resource="club/banyuan/dao/LotsDao.xml"/>
         <mapper resource="club/banyuan/dao/userDao.xml"/>
     </mappers>
 </configuration>

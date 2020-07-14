@@ -8,15 +8,8 @@
         </selectKey>
         insert into users(userName,userPwd,idNum,mobile,address,postcode) values (#{userName},#{userPwd},#{idNum},#{mobile},#{address},#{postcode})
     </insert>
-    <select id="getLoginUser" resultType="user" parameterType="user">
-        select * from users where 1=1
-        <if test="userName!=null and userName!=''">
-            and userName like #{userName}
-        </if>
-        <if test="address!= null">
-            and address like #{address}
-        </if>
+    <select id="getLoginUser" parameterType="user" resultType="user">
+        select * from users where userName = #{userName}
     </select>
-
 
 </mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.banyuan.dao.AuctionDao">
+    <insert id="add" parameterType="int">
+                
+    </insert>
+
+    <select id="selectByLotsId" resultType="club.banyuan.entity.Auction">
+
+    </select>
+    <select id="getLotsHighPrice" resultType="club.banyuan.entity.Auction">
+
+    </select>
+</mapper>

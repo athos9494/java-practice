@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.banyuan.dao.LotsDao">
+    <insert id="addLots" parameterType="int">
+        insert into lots(lots.name,description,startTime,finishTime,startPrice,basePrice,fileName,isSelled)
+        values(#{name},#{description},#{startTime},#{finishTime},#{startPrice},#{basePrice},#{fileName},#{isSelled})
+    </insert>
+    <update id="updateLots" parameterType="int">
+        update lots set lots.name =#{name},description = #{description},startTime = #{startTime},finishTime = #{finishTime},startPrice = #{startPrice},basePrice = #{basePrice},fileName = #{fileName},isSelled =#{isSelled}
+    </update>
+    <delete id="deleteLots" parameterType="int">
+        delete from lots where id =#{id}
+
+    </delete>
+
+    <select id="getLots" resultType="Lots" parameterType="Lots">
+        select *from lots where 1=1
+        <if test="id!=null and id!=''">
+            and id = #{id}
+        </if>
+        <if test="description!=null and description !=''">
+            and description = #{description}
+        </if>
+        <if test="startTime != null">
+            and startTime = #{startTime}
+        </if>
+        <if test="finishTime != null">
+            and finishTime = #{finishTime}
+        </if>
+        <if test="startPrice!= null">
+            and startTime = #{startTime}
+        </if>
+    </select>
+</mapper>
