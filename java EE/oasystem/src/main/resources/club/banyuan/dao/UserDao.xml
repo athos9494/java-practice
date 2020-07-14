@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.banyuan.dao.UserDao">
+    <insert id="add" parameterType="User">
+        <selectKey keyColumn="id" keyProperty="id" resultType="int">
+            select last_insert_id()
+        </selectKey>
+        insert into users(userName,userPwd,idNum,mobile,address,postcode) values (#{userName},#{userPwd},#{idNum},#{mobile},#{address},#{postcode})
+    </insert>
+    <select id="getLoginUser" resultType="user" parameterType="user">
+        select * from users where 1=1
+        <if test="userName!=null and userName!=''">
+            and userName like #{userName}
+        </if>
+        <if test="address!= null">
+            and address like #{address}
+        </if>
+    </select>
+
+
+</mapper>
